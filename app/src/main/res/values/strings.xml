@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Homework Task 1</string>
+    <string name="cityimage">CityImage</string>
+    <string name="textview">TextView</string>
+    <string name="cityname">City Name</string>
+    <string name="_24hr_button">24HR Button</string>
+    <string name="_12hr_button">12HR Button</string>
+    <string name="parisHL">Paris</string>
+    <string name="londonHL">London</string>
+    <string name="sydneyHL">Sydney</string>
+    <string name="dublinHL">Dublin</string>
+    <string name="newYorkHL">New York</string>
+    <string name="amsterdamHL">Amsterdam</string>
+    <string name="title">Homework Task 1</string>
+
 </resources>
