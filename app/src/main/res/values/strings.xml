@@ -12,5 +12,7 @@
     <string name="newYorkHL">New York</string>
     <string name="amsterdamHL">Amsterdam</string>
     <string name="title">Homework Task 1</string>
+    <string name="button12">12 Hour Time</string>
+    <string name="button24">24 Hour Time</string>
 
 </resources>

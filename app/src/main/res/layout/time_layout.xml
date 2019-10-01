@@ -15,7 +15,7 @@
         android:text="@string/cityname"
         android:textColor="@android:color/holo_orange_dark"
         android:textColorHighlight="@android:color/background_dark"
-        android:textSize="28sp"
+        android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -37,7 +37,7 @@
         android:layout_marginStart="25dp"
         android:layout_marginTop="10dp"
         android:text="@string/textview"
-        android:textSize="28sp"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/city" />
 </androidx.constraintlayout.widget.ConstraintLayout>
