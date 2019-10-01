@@ -68,9 +68,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         if (v == button12) {
             setContentView(R.layout.activity_main);
+            button12 = (Button) findViewById(R.id.Button12);
+            button12.setOnClickListener(this);
+            button24 = (Button) findViewById(R.id.Button24);
+            button24.setOnClickListener((View.OnClickListener) this);
             load12HourTimeZones();
         } else if (v == button24) {
             setContentView(R.layout.activity_main);
+            button12 = (Button) findViewById(R.id.Button12);
+            button12.setOnClickListener(this);
+            button24 = (Button) findViewById(R.id.Button24);
+            button24.setOnClickListener((View.OnClickListener) this);
             load24HourTimeZones();
         }
         return;
