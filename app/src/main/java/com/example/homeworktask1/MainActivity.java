@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public Button button12;
     public Button button24;
 
-
+    //formats the application upon creation
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,9 +61,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button12.setOnClickListener(this);
         button24 = (Button) findViewById(R.id.Button24);
         button24.setOnClickListener((View.OnClickListener) this);
-
+        button12.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_dark));
+        button24.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
     }
 
+    //button that both updates time and switches to alternative format
     @Override
     public void onClick(View v) {
         if (v == button12) {
@@ -73,19 +75,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             button24 = (Button) findViewById(R.id.Button24);
             button24.setOnClickListener((View.OnClickListener) this);
             load12HourTimeZones();
+            button12.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_dark));
+            button24.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
         } else if (v == button24) {
             setContentView(R.layout.activity_main);
             button12 = (Button) findViewById(R.id.Button12);
             button12.setOnClickListener(this);
             button24 = (Button) findViewById(R.id.Button24);
             button24.setOnClickListener((View.OnClickListener) this);
+            button24.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_dark));
+            button12.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
             load24HourTimeZones();
         }
         return;
     }
-
+    //Modify included layouts with 12-hour time
     protected void load12HourTimeZones() {
-        //modifying the Paris included layout
         Paris = findViewById(R.id.Paris);
         city1 = Paris.findViewById(R.id.city);
         city1.setText("Paris");
@@ -138,8 +143,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         time6.setText(get12Time("Europe/Dublin"));
     }
 
+    //modify included layouts with 24-hour times
     protected void load24HourTimeZones() {
-        //modifying the Paris included layout
         Paris = findViewById(R.id.Paris);
         city1 = Paris.findViewById(R.id.city);
         city1.setText("Paris");
